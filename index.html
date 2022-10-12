@@ -7,20 +7,10 @@
 
     </head>
 <body>
-  <style>
-  
-  </style>
         <!-- Website Header -->
     
     <div id= "div-to-be-changed" placeholder= "Type a number"></div> 
-    
-
     <div id="factors"></div> 
-
-    <input id="change" placeholder="Type a number"></div>
-    <input id="factor" placeholder="Type second number"></d>
-    <button onclick="isAfactor"> Compute </button>
-
 
   </body>
   
@@ -42,14 +32,14 @@ function isAfactor() {
         firstFactors.push(i);
         firstSummation = firstSummation + i;         // find sum of factors
     }
-  } alert(firstSummation);
+  }
             
   for(var z = 1; z < secondNumber; z++) {
     if(secondNumber % z == 0) {
         secondFactors.push(z);   
         secondSummation = secondSummation + z;
     }         
-  } alert(secondSummation);
+  } 
   
   if (firstSummation == secondNumber && secondSummation == firstNumber) {
     var amicable = ("The numbers: " + firstNumber + " and " + secondNumber + " are amicable.");
