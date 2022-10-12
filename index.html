@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style2.css" rel= "stylesheet" type="text/css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+
+    </head>
+<body>
+  <style>
+  
+  </style>
+        <!-- Website Header -->
+    
+    <div id= "div-to-be-changed" placeholder= "Type a number"></div> 
+    
+
+    <div id="factors"></div> 
+
+    <input id="change" placeholder="Type a number"></div>
+    <input id="factor" placeholder="Type second number"></d>
+    <button onclick="isAfactor"> Compute </button>
+
+
+  </body>
+  
+<script type="text/javascript">
+
+
+function isAfactor() {
+  var firstNumber = prompt("Enter First Number");
+  var secondNumber = prompt("Enter Second Number");
+  var firstSummation = 0;
+  var secondSummation = 0;
+  var firstFactors = [];
+  var secondFactors = [];
+  var FirstFactorsString;
+  var SecondFactorsString;
+
+  for(var i = 1; i < firstNumber; i++) {    
+    if(firstNumber % i == 0) {       // checking for factors
+        firstFactors.push(i);
+        firstSummation = firstSummation + i;         // find sum of factors
+    }
+  } alert(firstSummation);
+            
+  for(var z = 1; z < secondNumber; z++) {
+    if(secondNumber % z == 0) {
+        secondFactors.push(z);   
+        secondSummation = secondSummation + z;
+    }         
+  } alert(secondSummation);
+  
+  if (firstSummation == secondNumber && secondSummation == firstNumber) {
+    var amicable = ("The numbers: " + firstNumber + " and " + secondNumber + " are amicable.");
+  }
+  else {
+    var amicable = ("The numbers: " + firstNumber + " and " + secondNumber + " are not amicable.");
+  }
+   var factors = ("The factors of the first number are: " + firstFactors.toString() + " and the factors of the second number are " + secondFactors.toString());
+
+  document.getElementById("div-to-be-changed").innerHTML = amicable;
+  document.getElementById("factors").innerHTML = factors;
+}
+  isAfactor();
+</script>
+
+
+</html> 

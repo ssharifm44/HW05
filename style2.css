@@ -1,0 +1,52 @@
+/* RESPONSIVE BACKGROUND
+/* For device width smaller than 400px: */
+body {
+    background-repeat: no-repeat;
+    /* background-image: url('JoeHotDogStand.jpg');  */
+  }
+  body {
+    /* background-image: url('JoeHotDogStand.jpg'); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+    /* For device width 400px and larger: */
+    @media only screen and (min-device-width: 400px) {
+    /* body {  */
+    /* background-image: url('JoeHotDogStand.jpg');  */
+    /* } */
+  }
+  /* END RESPONSIVE BACKGROUND */
+  body {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    font: 0.9em/1.2 Arial, Helvetica, sans-serif;
+    color: black;
+    padding:3mm;
+  }
+  .box {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: #333;
+    padding-top: 0;
+    align-items: center;
+    padding:3mm;
+  } 
+  #div-to-be-changed{
+    height: 100px;
+    width: 100%;
+    border:10px solid black;
+    align-items: center;
+    padding-top:3mm;
+    text-align: center;
+  }
+  #factors{
+    height: 100px;
+    width: 100%;
+    border:10px solid black;
+    align-items: center;
+    padding-top: 3mm;
+    text-align: center;
+  }
